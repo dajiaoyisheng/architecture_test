@@ -21,8 +21,8 @@ class Browser(object):
             self.driver = webdriver.Chrome()
         elif browser == "IE":
             self.driver = webdriver.Ie()
-        self.driver.set_window_size(1920, 1080)  #分辨率
-        #self.driver.maximize_window()#最大化
+        self.driver.set_window_size(1920, 1080)  # 分辨率
+        # self.driver.maximize_window()#最大化
         self.driver.get(url)
         return self.driver
 

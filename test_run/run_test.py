@@ -33,11 +33,9 @@ def _main():
     new_report = email.new_report(test_report)
     email.send_mail(new_report)
     print('========== END ==========')
-    # 在浏览器中打开测试报告
+    # 在浏览器中打开最新的测试报告
     driver = webdriver.Chrome()
-    print(report_file_dir)
     driver.get(report_file_dir)
-    # driver.get('c:/Users/jiuqi/Desktop/joinshare_test/joinshare_test/report/result_2019-12-31 11_14_49.html')
 
 
 if __name__ == "__main__":

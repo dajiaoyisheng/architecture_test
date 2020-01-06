@@ -22,13 +22,12 @@ class Email(object):
         # 读取测试报告正文
         mail_body = f.read()
         f.close()
-
         smtpserver = 'smtp.qq.com'  # 发送邮箱服务器
         # 发送邮箱用户/密码(登录邮箱操作)
         username = '840758102@qq.com'
         passwd = 'zmxspyypvagsbbbf'
         # sender = '840758102@qq.com'  # 发送邮箱
-        receiver = ['webdong@163.com', '269383567@qq.com', 'lishuang0902@163.com']  # 接收邮箱
+        receiver = ['webdong@163.com']  # 接收邮箱
 
         subject = ' joinshare自动化测试报告'  # 发送主题
 
@@ -61,6 +60,4 @@ class Email(object):
 
 
 if __name__ == '__main__':
-    # email = Email()
-    # email.send_mail(r'c:\Users\jiuqi\Desktop\joinshare_test\joinshare_test\report\result_2019-12-20 17_24_24.html')
     pass
