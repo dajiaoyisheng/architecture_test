@@ -22,7 +22,7 @@ class Index(unittest.TestCase):
         pass
 
     def tearDown(self):
-        # self.driver.quit()
+        self.driver.quit()
         pass
 
     # 测试用例 必须以 'test_' 开头

@@ -34,8 +34,11 @@ def _main():
     email.send_mail(new_report)
     print('========== END ==========')
     # 在浏览器中打开最新的测试报告
-    driver = webdriver.Chrome()
-    driver.get(report_file_dir)
+    driver = webdriver.Firefox()
+    print(os.path.abspath(report_file_dir))
+    # C:\Users\jiuqi\Desktop\architecture_autotest\report\result_2020-01-07 11_22_07.html
+    # driver.get(report_file_dir)
+    driver.get('file:///'+report_file_dir)
 
 
 if __name__ == "__main__":
